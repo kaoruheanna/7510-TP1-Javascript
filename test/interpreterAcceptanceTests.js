@@ -55,7 +55,7 @@ describe("Interpreter", function () {
         it('varon(maria) should be false', function () {
             assert(interpreter.checkQuery('varon(maria)') === false);
         });
-/*
+
         it('mujer(cecilia) should be true', function () {
             assert(interpreter.checkQuery('mujer(cecilia)'));
         });
@@ -66,10 +66,7 @@ describe("Interpreter", function () {
 
         it('padre(mario, pepe) should be false', function () {
             assert(interpreter.checkQuery('padre(mario, pepe)') === false);
-        });*/
-
-        // TODO: Add more tests
-
+        });
     });
 
     describe('Interpreter Rules', function () {

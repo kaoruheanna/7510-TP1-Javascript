@@ -7,8 +7,8 @@ var Interpreter = function () {
     	this.factsMap.parseDB(db);
     }
 
-    this.checkQuery = function (params) {
-        return true;
+    this.checkQuery = function (str) {
+        return this.factsMap.checkFact(str);
     }
 
 }
