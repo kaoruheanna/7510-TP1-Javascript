@@ -1,0 +1,4 @@
+add(zero, zero, zero).
+add(zero, one, one).
+add(zero, two, tw
+add(one, zero, one).

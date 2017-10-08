@@ -27,3 +27,7 @@ npm install
 
 ## Run Tests
 mocha ./test/interpreterAcceptanceTests.js
+
+## Ejecucion
+node src/main.js <archivo input>
+ej: node src/main.js input/parent.txt
