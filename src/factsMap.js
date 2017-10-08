@@ -24,16 +24,21 @@ var FactsMap = function () {
 	}
 
     this.parseDB = function (db) {
-    	for (var item of db) {
+    	var invalidFacts = [];
+    	for (var i = 0; i < db.length; i++) {
+    		var item = db[i];
   			if (this.isFactInput(item)){
   				this.addFact(item);
+  			} else {
+  				invalidFacts.push(i);
   			}
   		}
+  		return invalidFacts;
     }
 
     this.checkFact = function(str){
     	if (!this.isFactQuery(str)){
-    		return false;
+    		return 'invalid';
     	}
     	var matches = str.match(factRegexQueryObj);
 		var factName = matches[1];

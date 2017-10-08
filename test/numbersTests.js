@@ -57,8 +57,7 @@ describe("Numbers", function () {
 
         it('add(two, one, eleven) should be false', function () {
             assert(interpreter.checkQuery('add(two, one, eleven)') === false);
-        });
-       
+        });     
     });
 
     describe('Numbers Rules', function () {

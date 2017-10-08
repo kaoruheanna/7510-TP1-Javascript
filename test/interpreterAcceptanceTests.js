@@ -21,8 +21,7 @@ describe("Interpreter", function () {
         "padre(roberto, alejandro).",
         "padre(roberto, cecilia).",
         "hijo(X, Y) :- varon(X), padre(Y, X).",
-        "hija(X, Y) :- mujer(X), padre(Y, X).",
-        "llalalla"
+        "hija(X, Y) :- mujer(X), padre(Y, X)."
     ];
 
     var interpreter = null;

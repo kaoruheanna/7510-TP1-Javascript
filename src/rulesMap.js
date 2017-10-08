@@ -43,16 +43,21 @@ var RulesMap = function () {
 	}
 
     this.parseDB = function (db) {
-    	for (var item of db) {
+    	var invalidRules = [];
+    	for (var i = 0; i < db.length; i++) {
+    		var item = db[i];
     		if (this.isRuleInput(item)){
   				this.addRule(item);
+  			} else {
+  				invalidRules.push(i);
   			}
   		}
+  		return invalidRules;
     }
 
     this.checkRule = function(str){
     	if (!this.isRuleQuery(str)){
-    		return false;
+    		return 'invalid';
     	}
     	var matches = str.match(ruleNameRegexObj);
     	var ruleName = matches[1];
