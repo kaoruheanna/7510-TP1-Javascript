@@ -71,7 +71,7 @@ describe("Interpreter", function () {
 
     describe('Interpreter Rules', function () {
 
-/*        it('hijo(pepe, juan) should be true', function () {
+        it('hijo(pepe, juan) should be true', function () {
             assert(interpreter.checkQuery('hijo(pepe, juan)') === true);
         });
         it('hija(maria, roberto) should be false', function () {
@@ -80,9 +80,6 @@ describe("Interpreter", function () {
         it('hijo(pepe, juan) should be true', function () {
             assert(interpreter.checkQuery('hijo(pepe, juan)'));
         });
-*/
-        // TODO: Add more tests
-
     });
 
 

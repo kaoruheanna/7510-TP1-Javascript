@@ -3,13 +3,9 @@ var FactsMap = function () {
 	var factRegexInputObj = /^([a-zA-Z]+)\([a-zA-Z]+[a-zA-Z,\ ]*\)\.$/;
 	var factRegexQueryObj = /^([a-zA-Z]+)\([a-zA-Z]+[a-zA-Z,\ ]*\)$/;
 
-	/*var ruleRegexObj = new RegExp('^([a-zA-Z]*)\(([a-zA-Z,\ ]*)\) :- (([a-zA-Z]*)\(([a-zA-Z,\ ]*)\), )*([a-zA-Z]*)\(([a-zA-Z,\ ]*)\)');*/
 	var ruleRegexObj = new RegExp('^([a-zA-Z]*)\(([a-zA-Z,\ ]*)\) :- ');
 
 	this.facts = {};
-
-	/*"varon(juan).",*/
-	/*"hija(X, Y) :- mujer(X), padre(Y, X)."*/
 
 	this.isFactInput = function(str){
 		return factRegexInputObj.test(str);
