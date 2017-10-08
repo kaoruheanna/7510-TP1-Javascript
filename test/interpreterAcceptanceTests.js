@@ -21,7 +21,8 @@ describe("Interpreter", function () {
         "padre(roberto, alejandro).",
         "padre(roberto, cecilia).",
         "hijo(X, Y) :- varon(X), padre(Y, X).",
-        "hija(X, Y) :- mujer(X), padre(Y, X)."
+        "hija(X, Y) :- mujer(X), padre(Y, X).",
+        "llalalla"
     ];
 
     var interpreter = null;
@@ -54,7 +55,7 @@ describe("Interpreter", function () {
         it('varon(maria) should be false', function () {
             assert(interpreter.checkQuery('varon(maria)') === false);
         });
-
+/*
         it('mujer(cecilia) should be true', function () {
             assert(interpreter.checkQuery('mujer(cecilia)'));
         });
@@ -65,7 +66,7 @@ describe("Interpreter", function () {
 
         it('padre(mario, pepe) should be false', function () {
             assert(interpreter.checkQuery('padre(mario, pepe)') === false);
-        });
+        });*/
 
         // TODO: Add more tests
 
@@ -73,7 +74,7 @@ describe("Interpreter", function () {
 
     describe('Interpreter Rules', function () {
 
-        it('hijo(pepe, juan) should be true', function () {
+/*        it('hijo(pepe, juan) should be true', function () {
             assert(interpreter.checkQuery('hijo(pepe, juan)') === true);
         });
         it('hija(maria, roberto) should be false', function () {
@@ -82,7 +83,7 @@ describe("Interpreter", function () {
         it('hijo(pepe, juan) should be true', function () {
             assert(interpreter.checkQuery('hijo(pepe, juan)'));
         });
-
+*/
         // TODO: Add more tests
 
     });

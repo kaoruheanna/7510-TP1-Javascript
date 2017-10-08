@@ -1,7 +1,10 @@
+var FactsMap = require('./factsMap');
+
 var Interpreter = function () {
 
-    this.parseDB = function (params, paramss, paramsss) {
-
+    this.parseDB = function (db) {
+    	this.factsMap = new FactsMap();
+    	this.factsMap.parseDB(db);
     }
 
     this.checkQuery = function (params) {
